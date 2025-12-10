@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="addEmpForm">
+    <input type="text" name="name" id="name" placeholder="enter name here.." required>
+    <input type="text" name="email" id="email" placeholder="enter email here.." required>
+    <input type="text" name="salary" id="salary" placeholder="enter salary here.." required>
+    <button id="addEmp">addEmp</button>
+</form>
+  <table>
+    <tbody id="empsContainer">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>salary</th>
+        </tr>
+    </tbody>
+  </table>
+  </table>
+    
+    <script src="{% static './ems.js' %}"></script>
+</body>
+</html>
