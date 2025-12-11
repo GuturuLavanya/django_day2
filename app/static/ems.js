@@ -31,7 +31,8 @@ addEmpForm.addEventListener("submit",(e)=>{
         console.log(res,"res")
         empsFormLS.push(newEmp)
         localStorage.setItem("emps",JSON.stringify(empsFormLS))
-        addEmpForm.reset()
+        // addEmpForm.reset()
+        localStorage.clear()
         loadEmps()
     });
 });
